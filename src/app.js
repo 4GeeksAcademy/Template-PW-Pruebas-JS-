@@ -1,11 +1,31 @@
-import "bootstrap";
-import "./style.css";
+/*const parrafo = document.getElementById("mensaje") 
+parrafo.innerHTML = "<h1>Hola desde app.js</h1>"
 
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+const query = document.querySelector('.query')
+query.innerHTML = "Esto si es un query"
+query.style.backgroundColor = 'yellow'
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+parrafo.style.color = "blue"
+parrafo.addEventListener("click", () => {
+    parrafo.style.backgroundColor = 'green'
+})
+
+const botonaco = document.getElementById("miBoton")
+
+botonaco.addEventListener("click", () => {
+    parrafo.style.backgroundColor = 'red'
+})
+/*
+.lenght
+Math.random
+Math.floor
+*/
+let palabra = "supercalifragilisticoespiralidoso"
+console.log("supercalifragilisticoespiralidoso".length);
+
+const ropa = ["zapato", "camiseta", "calcetin", "sudadera"];
+console.log(ropa[1]);
+
+
+console.log(Math.floor(Math.random()));
