@@ -1,31 +1,37 @@
-/*const parrafo = document.getElementById("mensaje") 
-parrafo.innerHTML = "<h1>Hola desde app.js</h1>"
+import "bootstrap";
+import "./style.css";
 
 
-const query = document.querySelector('.query')
-query.innerHTML = "Esto si es un query"
-query.style.backgroundColor = 'yellow'
+import "./assets/img/rigo-baby.jpg";
+import "./assets/img/4geeks.ico";
 
-parrafo.style.color = "blue"
-parrafo.addEventListener("click", () => {
-    parrafo.style.backgroundColor = 'green'
-})
-
-const botonaco = document.getElementById("miBoton")
-
-botonaco.addEventListener("click", () => {
-    parrafo.style.backgroundColor = 'red'
-})
-/*
-.lenght
-Math.random
-Math.floor
-*/
-let palabra = "supercalifragilisticoespiralidoso"
-console.log("supercalifragilisticoespiralidoso".length);
-
-const ropa = ["zapato", "camiseta", "calcetin", "sudadera"];
-console.log(ropa[1]);
+window.onload = function() {
+  //write your code here
 
 
-console.log(Math.floor(Math.random()));
+
+  //          0   /       1        /   2         /   3
+let who = ['The dog', 'My grandma', 'The mailman', 'My bird'];
+let action = ['ate', 'peed', 'crushed', 'broke'];
+let what = ['my homework', 'my phone', 'the car'];
+let when = ['before the class', 'when I was sleeping', 'while I was exercising', 'during my lunch', 'while I was praying'];
+
+let rdmWho = Math.floor(Math.random() * who.length )
+let rdmAction = Math.floor(Math.random() * action.length )
+let rdmWhat = Math.floor(Math.random() * what.length )
+let rdmWhen = Math.floor(Math.random() * when.length )
+
+
+
+
+document.getElementById("excuse").innerHTML = (who[rdmWho] + " " + action[rdmAction] + " " + what[rdmWhat] + " " + when[rdmWhen]);
+  //console.log(multiplicacion);
+ 
+  
+document.getElementById("boton").addEventListener("click",  function() {
+    location.reload();
+  });
+
+};
+
+
